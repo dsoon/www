@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Tic-Tac-Toe</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+    <H2>TIC-TAC-TOE</H2>
+
+    This is a 2 player game. Each player takes a turn to pick
+    a location on a 3 x 3 board. The first player, player1 is 
+    assigned a 'X', and player 2 a 'O'.<br>
+
+    <br>
+    <h4>Board locations are as follows:</h4>
+    <table>
+        <tr><td>1</td><td>2</td><td>3</td></tr>
+        <tr><td>4</td><td>5</td><td>6</td></tr>
+        <tr><td>7</td><td>8</td><td>9</td></tr>
+    </table><br>
+
+    <h3>Current board</h3>
+    <table id="board">
+        <tr><td>_</td><td>_</td><td>_</td></tr>
+        <tr><td>_</td><td>_</td><td>_</td></tr>
+        <tr><td>_</td><td>_</td><td>_</td></tr>
+    </table><br>
+
+    <input id="input" type="number" min="1" max="9"><br><br>
+    <button id = "submit" onclick="submit_pos()">submit</button>
+    <button id = "reset" onclick="reset_game()">reset</button>
+    
+    <script src="script.js"></script>
+    <p id="status" style="color:red">Player 1 turn</p>
+  </body>
+</html>
